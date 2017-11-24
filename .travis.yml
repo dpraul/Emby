@@ -1,0 +1,4 @@
+language: csharp
+solution: MediaBrowser.sln
+script:
+  - xbuild /p:Configuration="Release Mono" /p:Platform="Any CPU" MediaBrowser.sln
