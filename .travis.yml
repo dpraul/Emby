@@ -8,7 +8,7 @@ deploy:
   github_token:
     secure: lJmB3E5nIpSjqB1GRF0Cx2PZSBGOEgkpPG0ECatooRgm1mcsnAepj2XRwAfKia8eEGwA7q7Ivv2NYvcrZEu6Z/jlAn8BcABnBdNnX9Bg/1jNy+xNj3fdfIH24SycEuGn+MgSr4vNx16NZK099qwkCTj1EFt/fCGEpjb9dtfxztvVCw0reYzT1rIh98LKnSh1QvDlhA1CSGwjfZxwzNrkOR2vnwjqDms4+3RwMBtAG+3+EBJT2pi2aK8Xwt6cDJ2sShfs/gY7oqXoGQ9GYy8wOQfO/luDJziu+ebT/cKwGDOgzhlxj10bGI1aZEIyWKuX2Fc+0Czaln2G7UMYRLhTevdnJZAzlsYPDmu/aovBj7IIht9DeuO+/RD6Y2w00knoysYPbBBLPgh4WgIzfDsXEnlqMIR0wrnmsQ+fCKL8SCfbbwlzVG5jrcDLUNLCQ1zuLkdlzJU4ICkvu6UcSII/wo6KTd1hrEk8sgEipgO0en6Bs63/WHRO8G8Anzam3VBZrP661XgNHWRRGFANcomho8ReBW9EtckqK1cOHjPDm8ZXyIHfxezUjdxdK2SkdbnEjXMIX2avRi4vIpFcrrnbFU7H9pmCyYSyFuXXQ5sfJPFGFNsq8ilZ3jIQF4nuTg4vzldkxWHDNPyJpCP6AClwgh/n69wt8WkJqGOtWdKANrU=
   target_branch: releases
-  local_dir: MediaBrowser.Server.Mono\bin\Release
+  local_dir: MediaBrowser.Server.Mono/bin/Release
   on:
     repo: dpraul/Emby
     branch: travis
