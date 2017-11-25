@@ -1,0 +1,42 @@
+﻿<div id="userProfilesPage" data-role="page" class="page type-interior userProfilesPage fullWidthContent" data-helpurl="https://github.com/MediaBrowser/Wiki/wiki/Users" data-require="scripts/userprofilespage,emby-button">
+
+    <div>
+        <div class="content-primary">
+            <div class="verticalSection" style="margin-bottom:3em;">
+                <div class="sectionTitleContainer">
+                    <h2 class="sectionTitle">
+                        <span>${HeaderUsers}</span>
+                    </h2>
+                    <button is="emby-button" type="button" class="raised btnAddUser submit raised-mini sectionTitleButton" style="margin-left:1em;" title="${ButtonAddUser}">
+                        <i class="md-icon">&#xE145;</i>
+                        <span>${ButtonAdd}</span>
+                    </button>
+                </div>
+                <div class="localUsers itemsContainer vertical-wrap" style="margin-top: .5em;"></div>
+            </div>
+
+            <div class="verticalSection" style="margin-bottom:3em;">
+                <div class="sectionTitleContainer">
+                    <h2 class="sectionTitle">
+                        ${HeaderGuests}
+                    </h2>
+                    <button is="emby-button" type="button" class="raised btnInvite submit raised-mini" style="margin-left:1em;" title="${ButtonInviteUser}">
+                        <i class="md-icon">&#xE145;</i>
+                        <span>${ButtonAdd}</span>
+                    </button>
+                </div>
+                <div class="connectUsers itemsContainer vertical-wrap" style="margin-top:.5em;"></div>
+            </div>
+
+            <div class="sectionPendingGuests verticalSection hide">
+                <div class="sectionTitleContainer">
+                    <h2 class="sectionTitle">
+                        ${HeaderPendingInvitations}
+                    </h2>
+                </div>
+                <div class="itemsContainer vertical-wrap pending" style="margin-top:.5em;"></div>
+            </div>
+        </div>
+
+    </div>
+</div>
