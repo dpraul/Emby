@@ -1,9 +1,10 @@
 language: csharp
 solution: MediaBrowser.sln
-script:
-- git clone git@github.com:nvllsvm/emby-unlocked.git
+before_script:
+- git clone https://github.com/nvllsvm/emby-unlocked.git
 - patch -N -p1 -r - Emby.Server.Implementations/Security/PluginSecurityManager.cs < emby-unlocked/patches/PluginSecurityManager.cs.patch
 - mv emby-unlocked/replacements/connectionmanager.js MediaBrowser.WebDashboard/dashboard-ui/bower_components/emby-apiclient/connectionmanager.js
+script:
 - xbuild /p:Configuration="Release Mono" /p:Platform="Any CPU" MediaBrowser.sln
 before_deploy: "zip -r Emby.Mono.zip MediaBrowser.Server.Mono/bin/Release"
 deploy:
